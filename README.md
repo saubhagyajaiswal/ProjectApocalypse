@@ -1,7 +1,7 @@
 # ProjectApocalypse
 ### Register to Survive
 
-#### Pre-Step:
+#### Prerequisite:
 * Have a Postgres dataBase as below:
   * url=jdbc:postgresql://localhost:5432/apocalypse
   * databaseName: apocalypse
