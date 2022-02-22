@@ -17,6 +17,7 @@ Have a Postgres dataBase as below:
  Or you can you Postman for API testin.
  
  **SurvivorCotroller**
+ 
    * CreateSurvivor :  Need to provide below details   POST REQUEST 
           Request Body{
               "age": 0,
@@ -28,7 +29,6 @@ Have a Postgres dataBase as below:
               "name": "string"
               }
           Request Parameter [WATER, FOOD, MEDICATION, AMMUNITION]   // any
-
     * Get Details of All Survivors:           GET REQUEST  http://localhost:8090/survivor
     * Infection Update :                      PUT REQUEST  http://localhost:8090/survivor/infectionUpdate?userId=11
           Request Parameter  userId: 11
@@ -40,6 +40,7 @@ Have a Postgres dataBase as below:
           Request Parameter userId : 11
    
    **ReportsController**
+   
         * Get Percentage Of Infected Survivors:       GET REQUEST http://localhost:8090/reports/infectedPercentage
         * Get Percentage Of Non Infected Survivors:   GET REQUEST http://localhost:8090/reports/nonInfectedPercentage
         * Get List Of Infected Survivors:             GET REQUEST http://localhost:8090/reports/infectedSurvivors
