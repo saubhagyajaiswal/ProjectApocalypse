@@ -18,7 +18,7 @@
  
  **SurvivorCotroller**
     
-    * CreateSurvivor :  Need to provide below details   POST REQUEST 
+    * CreateSurvivor :  Need to provide below details   POST REQUEST     http://localhost:8090/survivor?resource=WATER
           Request Body{
               "age": 0,
               "gender": "string",
