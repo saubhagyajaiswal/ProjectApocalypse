@@ -17,8 +17,17 @@ Have a Postgres dataBase as below:
  Or you can you Postman for API testin.
  
  **SurvivorCotroller**
- 
-   * CreateSurvivor :  Need to provide below details   POST REQUEST 
+     
+    * Get Details of All Survivors:           GET REQUEST  http://localhost:8090/survivor
+    * Infection Update :                      PUT REQUEST  http://localhost:8090/survivor/infectionUpdate?userId=11
+          Request Parameter  userId: 11
+    * Location Update for survivor:           PUT REQUEST  http://localhost:8090/survivor/locationUpdate?userId=11
+          Request Body {
+                          "latitude": "23",
+                          "longitude": "33"
+                        }
+          Request Parameter userId : 11
+    * CreateSurvivor :  Need to provide below details   POST REQUEST 
           Request Body{
               "age": 0,
               "gender": "string",
@@ -29,15 +38,6 @@ Have a Postgres dataBase as below:
               "name": "string"
               }
           Request Parameter [WATER, FOOD, MEDICATION, AMMUNITION]   // any
-    * Get Details of All Survivors:           GET REQUEST  http://localhost:8090/survivor
-    * Infection Update :                      PUT REQUEST  http://localhost:8090/survivor/infectionUpdate?userId=11
-          Request Parameter  userId: 11
-    * Location Update for survivor:           PUT REQUEST  http://localhost:8090/survivor/locationUpdate?userId=11
-          Request Body {
-                          "latitude": "23",
-                          "longitude": "33"
-                        }
-          Request Parameter userId : 11
    
    **ReportsController**
    
